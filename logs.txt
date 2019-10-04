@@ -1,0 +1,10 @@
+
+2019-10-03 17:46:51.990119 : Done Generating Report in 0.11000633239746094s
+2019-10-03 17:46:51.990119 : Sending report to  ['jdeus@fortmed.org']
+2019-10-03 17:46:51.990119 : Email Successfuly Sent in 3.009171962738037s
+2019-10-03 17:48:00.019010 : Done Generating Report in 0.09700584411621094s
+2019-10-03 17:48:00.019010 : Sending report to  ['jdeus@fortmed.org']
+2019-10-03 17:48:00.019010 : Email Successfuly Sent in 3.076176166534424s
+2019-10-03 17:49:08.122906 : Done Generating Report in 0.08100438117980957s
+2019-10-03 17:49:08.122906 : Sending report to  ['jdeus@fortmed.org']
+2019-10-03 17:49:08.122906 : Email Successfuly Sent in 3.0771758556365967s
