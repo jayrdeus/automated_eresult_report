@@ -29,8 +29,8 @@ def send_email():
     email_user = 'jdeus@fortmed.org'
     content = 'Good Day! \n\nPlease see attached file!'
     msg = MIMEMultipart()
-    # to ='amendoza@fortmed.org,beth.ko@fortmed.org,ageronimo@fortmed.org'
-    to = 'jdeus@fortmed.org'
+    #to ='amendoza@fortmed.org,beth.ko@fortmed.org,ageronimo@fortmed.org,eugenemacalalag@gmail.com'
+    to = 'jdeus@fortmed.org,dtadeo@fortmed.org'
     msg['Subject'] =f'e-Result Report from {date_to.strftime("%m/%d/%Y")} to {today.strftime("%m/%d/%Y")}'
     msg['From'] = email_user
     msg['To'] = to
@@ -86,14 +86,14 @@ def screen():
     system('cls')
     print('Automated Email for E-Result Reports is now running!')
 
+
 #Schedules
 # Date Checking
-schedule.every().day.at('09:59').do(date_checking)
+schedule.every(1).minutes.do(job)
+schedule.every().day.at('09:00').do(date_checking)
 # Schedule for emailing the managers
 schedule.every().saturday.at("19:00").do(job)
-
-system('cls')
-print('Automated Email for E-Result Reports is now running!')
+screen()
 while True:
     schedule.run_pending()
     time.sleep(1)
